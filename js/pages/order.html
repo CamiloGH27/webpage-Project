@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website information -->
+    <title>Order Online | International Restaurant</title>
+    <meta name="description" content="Place your order and enjoy your favorite international dishes.">
+
+</head>
+
+<body>
+
+    <!--  HEADER  -->
+    <header>
+
+        <!-- Restaurant Logo / Name -->
+        <div class="logo">
+            <h1>International Restaurant</h1>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order Online</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!--  MAIN CONTENT  -->
+    <main>
+
+        <!-- Order Introduction -->
+        <section id="order-introduction">
+
+            <h2>Place Your Order</h2>
+
+            <p>
+                Choose your favorite dishes, customize your order,
+                and let us take care of the rest!
+            </p>
+
+        </section>
+
+
+        <!--  ORDER FORM  -->
+        <section id="order-section">
+
+            <h2>Your Order</h2>
+
+            <form id="order-form">
+
+                <!-- Customer Information -->
+                <fieldset>
+
+                    <legend>Customer Information</legend>
+
+                    <label for="customer-name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="customer-name"
+                        name="customer-name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                    <label for="customer-email">Email:</label>
+                    <input
+                        type="email"
+                        id="customer-email"
+                        name="customer-email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="customer-phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="customer-phone"
+                        name="customer-phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+
+                </fieldset>
+
+
+                <!-- Order Type -->
+                <fieldset>
+
+                    <legend>Order Type</legend>
+
+                    <input
+                        type="radio"
+                        id="pickup"
+                        name="order-type"
+                        value="pickup"
+                        checked
+                    >
+                    <label for="pickup">Pickup</label>
+
+                    <input
+                        type="radio"
+                        id="delivery"
+                        name="order-type"
+                        value="delivery"
+                    >
+                    <label for="delivery">Delivery</label>
+
+                </fieldset>
+
+
+                <!-- Dish Selection -->
+                <fieldset>
+
+                    <legend>Select Your Dishes</legend>
+
+                    <!-- First Dish -->
+                    <div class="order-item">
+
+                        <label for="dish-1">Select a Dish:</label>
+
+                        <select id="dish-1" name="dish-1" required>
+
+                            <option value="">-- Choose a dish --</option>
+
+                            <optgroup label="Appetizers">
+                                <option value="appetizer-1">Appetizer 1</option>
+                                <option value="appetizer-2">Appetizer 2</option>
+                            </optgroup>
+
+                            <optgroup label="Main Courses">
+                                <option value="main-1">Main Course 1</option>
+                                <option value="main-2">Main Course 2</option>
+                            </optgroup>
+
+                            <optgroup label="Desserts">
+                                <option value="dessert-1">Dessert 1</option>
+                                <option value="dessert-2">Dessert 2</option>
+                            </optgroup>
+
+                            <optgroup label="Beverages">
+                                <option value="beverage-1">Beverage 1</option>
+                                <option value="beverage-2">Beverage 2</option>
+                            </optgroup>
+
+                        </select>
+
+                        <label for="quantity-1">Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="quantity-1"
+                            name="quantity-1"
+                            min="1"
+                            value="1"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Second Dish -->
+                    <div class="order-item">
+
+                        <label for="dish-2">Select Another Dish:</label>
+
+                        <select id="dish-2" name="dish-2">
+
+                            <option value="">-- Choose a dish --</option>
+
+                            <optgroup label="Appetizers">
+                                <option value="appetizer-1">Appetizer 1</option>
+                                <option value="appetizer-2">Appetizer 2</option>
+                            </optgroup>
+
+                            <optgroup label="Main Courses">
+                                <option value="main-1">Main Course 1</option>
+                                <option value="main-2">Main Course 2</option>
+                            </optgroup>
+
+                            <optgroup label="Desserts">
+                                <option value="dessert-1">Dessert 1</option>
+                                <option value="dessert-2">Dessert 2</option>
+                            </optgroup>
+
+                            <optgroup label="Beverages">
+                                <option value="beverage-1">Beverage 1</option>
+                                <option value="beverage-2">Beverage 2</option>
+                            </optgroup>
+
+                        </select>
+
+                        <label for="quantity-2">Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="quantity-2"
+                            name="quantity-2"
+                            min="1"
+                            value="1"
+                        >
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- Special Instructions -->
+                <fieldset>
+
+                    <legend>Customize Your Order</legend>
+
+                    <label for="special-instructions">
+                        Special Instructions:
+                    </label>
+
+                    <textarea
+                        id="special-instructions"
+                        name="special-instructions"
+                        rows="5"
+                        placeholder="Add special requests, ingredient modifications, allergies, etc."
+                    ></textarea>
+
+                </fieldset>
+
+
+                <!-- Order Submission -->
+                <button type="submit">Place Order</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!--  FOOTER  -->
+    <footer>
+
+        <p>&copy; 2026 International Restaurant. All rights reserved.</p>
+
+        <p>Follow us on social media!</p>
+
+    </footer>
+
+</body>
+</html>
